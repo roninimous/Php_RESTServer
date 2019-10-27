@@ -22,7 +22,7 @@ $app->get('/', \RouteAction::class.":index");
 $app->get('/data', \RouteAction::class.":getData");
 $app->get('/contacts', \RouteAction::class.":getContacts");
 $app->get("/contacts/keyword/{keyword}", \RouteAction::class.":searchContacts");
-$app->post('/contacts', \RouteAction::class.":addContacts");
+$app->post('/contacts', \RouteAction::class.":addContact");
 // start the app
 $app->run();
 

@@ -47,8 +47,9 @@ class RouteAction {
                         ->write(json_encode($records));
     }
 
-    function addContacts($request, $response, $args) {
-        $post = $requst->getParsedBody();
+    function addContact($request, $response, $args) {
+        $post = $request->getParsedBody();
+        
         $first_name = $post["first_name"];
         $last_name = $post["last_name"];
         $email = $post["email"];
@@ -66,10 +67,7 @@ class RouteAction {
         } else {
             $message = 'Contact failed to add to Database';
         }
-
         $data = ['message' => $message];
-
-
         // return response header for JSON body content type
         return $response->withHeader('Content-Type', 'application/json')
                         ->write(json_encode($data));

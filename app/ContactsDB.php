@@ -50,8 +50,8 @@ class ContactsDB {
 
     function addContact($values) {
         $sql = "insert into vbookings 
-        (first_name, last_name,email,mobile,booking_date,booking_time,image_filename)
-        values (?,?,?,?,?,?,?)";
+        (first_name, last_name,email,mobile,booking_date,booking_time,venue,image_filename)
+        values (?,?,?,?,?,?,?,?)";
 
 //Create a prepared statement to insert records using wild cards 
         $statement = $this->pdo->prepare($sql);
@@ -79,6 +79,7 @@ class ContactsDB {
         or email like '%$keyword%'
         or mobile like '%$keyword%'
         or booking_date like '%$keyword%'
+        or venue like '%$keyword%'
         or booking_time like '%$keyword%'";
 //        or photo_filename like '%$keyword%'";
 
