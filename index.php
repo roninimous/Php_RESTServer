@@ -21,6 +21,8 @@ $app->get('/', \RouteAction::class.":index");
 // Create the REST based route for a resource URI
 $app->get('/data', \RouteAction::class.":getData");
 $app->get('/contacts', \RouteAction::class.":getContacts");
+$app->get("/contacts/keyword/{keyword}", \RouteAction::class.":searchContacts");
+$app->post('/contacts', \RouteAction::class.":addContacts");
 // start the app
 $app->run();
 
