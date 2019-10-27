@@ -36,7 +36,7 @@ class ContactsDB {
     }
 
     function getContact($id) {
-        $record = [];
+//        $record = [];
         // prepare the SQL statement
         $sql = "select * from vbookings where id = $id";
         // Query the database for records 
@@ -44,8 +44,8 @@ class ContactsDB {
         //Set the fetch mode to return Associative Array
         $statement->setFetchMode(PDO::FETCH_ASSOC);
         // Fetch all records
-        $record = $statement->fetchAll();
-        return $record;
+        $records = $statement->fetchAll();
+        return $records[0];
     }
 
     function addContact($values) {
@@ -92,7 +92,7 @@ class ContactsDB {
 
     function editContact($id, $values) {
         $sql = "update vbookings set first_name = ?,last_name = ?,email = ?,
-        mobile = ?,booking_date = ?, booking_time = ?, image_filename = ? where id = $id";
+        mobile = ?,booking_date = ?, booking_time = ?,venue = ?, image_filename = ? where id = $id";
 
 //Create a prepared statement to insert records using wild cards 
         $statement = $this->pdo->prepare($sql);

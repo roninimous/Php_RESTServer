@@ -38,6 +38,22 @@ class RouteAction {
         return $response->withHeader('Content-Type', 'application/json')
                         ->write(json_encode($records));
     }
+    
+    function getContact($request, $response, $args) {
+        $id = $args['id'];
+        $record = $this->contacts->getContact($id);
+        // return response header for JSON body content type
+        return $response->withHeader('Content-Type', 'application/json')
+                        ->write(json_encode($record));
+    }
+    
+    function deleteContact($request, $response, $args) {
+        $id = $args['id'];
+        $success = $this->contacts->deleteContact($id);
+        // return response header for JSON body content type
+        return $response->withHeader('Content-Type', 'application/json')
+                        ->write(json_encode($success));
+    }
 
     function searchContacts($request, $response, $args) {
         $keyword = $args['keyword'];
@@ -66,6 +82,33 @@ class RouteAction {
             $message = "Contact has successfully added to Database. Loading View Contacts page in 5 seconds";
         } else {
             $message = 'Contact failed to add to Database';
+        }
+        $data = ['message' => $message];
+        // return response header for JSON body content type
+        return $response->withHeader('Content-Type', 'application/json')
+                        ->write(json_encode($data));
+    }
+    
+    
+    function updateContact($request, $response, $args) {
+        $post = $request->getParsedBody();
+        $id = $args['id'];
+        $first_name = $post["first_name"];
+        $last_name = $post["last_name"];
+        $email = $post["email"];
+        $mobile = $post["mobile"];
+        $booking_date = $post["booking_date"];
+        $booking_time = $post["booking_time"];
+        $venue = $post["venue"];
+        $image_filename = $post['image_filename'];
+        $values = ["$first_name", "$last_name", "$email", "$mobile", "$booking_date", "$booking_time", "$venue", "$image_filename"];
+
+
+        $success = $this->contacts->editContact($id,$values);
+        if ($success) {
+            $message = "Contact has successfully updated. Loading View Contacts page in 5 seconds";
+        } else {
+            $message = 'Contact failed to updated';
         }
         $data = ['message' => $message];
         // return response header for JSON body content type

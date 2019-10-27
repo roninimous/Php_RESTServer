@@ -1,5 +1,6 @@
 <?php
-
+// Record errors to log file
+include_once 'loginfo.php';
 // register vendor directories
 require __DIR__ . '/vendor/autoload.php';
 
@@ -23,6 +24,9 @@ $app->get('/data', \RouteAction::class.":getData");
 $app->get('/contacts', \RouteAction::class.":getContacts");
 $app->get("/contacts/keyword/{keyword}", \RouteAction::class.":searchContacts");
 $app->post('/contacts', \RouteAction::class.":addContact");
+$app->get('/contacts/{id}', \RouteAction::class.":getContact");
+$app->put('/contacts/{id}', \RouteAction::class.":updateContact");
+$app->delete('/contacts/{id}', \RouteAction::class.":deleteContact");
 // start the app
 $app->run();
 
