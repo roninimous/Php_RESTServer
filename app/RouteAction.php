@@ -5,13 +5,15 @@
  * Defines the functions that correspond to the route actions
  */
 include_once 'ContactsDB.php';
-
+include_once 'VbookingsDB.php';
 class RouteAction {
 
     var $contacts;
+    var $bookings;
 
     function __construct() {
         $this->contacts = new ContactsDB();
+        $this->bookings = new VbookingsDB();
     }
 
     function index($request, $response, $args) {
@@ -32,38 +34,44 @@ class RouteAction {
                         ->write(json_encode($records));
     }
 
-    function getContacts($request, $response, $args) {
-        $records = $this->contacts->getContacts();
+    function getBookings($request, $response, $args) {
+        $records = $this->bookings->getBookings();
         // return response header for JSON body content type
         return $response->withHeader('Content-Type', 'application/json')
                         ->write(json_encode($records));
     }
     
-    function getContact($request, $response, $args) {
+    function getBooking($request, $response, $args) {
         $id = $args['id'];
-        $record = $this->contacts->getContact($id);
+        $record = $this->bookings->getBooking($id);
         // return response header for JSON body content type
         return $response->withHeader('Content-Type', 'application/json')
                         ->write(json_encode($record));
     }
     
-    function deleteContact($request, $response, $args) {
+    function deleteBooking($request, $response, $args) {
         $id = $args['id'];
-        $success = $this->contacts->deleteContact($id);
+        $success = $this->bookings->deleteBooking($id);
+        if ($success) {
+            $message = "Booking has successfully deleted. Loading View Bookings page in 5 seconds";
+        } else {
+            $message = 'Booking failed to delete';
+        }
+        $data = ['message' => $message];
         // return response header for JSON body content type
         return $response->withHeader('Content-Type', 'application/json')
-                        ->write(json_encode($success));
+                        ->write(json_encode($data));
     }
 
-    function searchContacts($request, $response, $args) {
+    function searchBookings($request, $response, $args) {
         $keyword = $args['keyword'];
-        $records = $this->contacts->searchContact($keyword);
+        $records = $this->bookings->searchBookings($keyword);
         // return response header for JSON body content type
         return $response->withHeader('Content-Type', 'application/json')
                         ->write(json_encode($records));
     }
 
-    function addContact($request, $response, $args) {
+    function addBooking($request, $response, $args) {
         $post = $request->getParsedBody();
         
         $first_name = $post["first_name"];
@@ -75,13 +83,11 @@ class RouteAction {
         $venue = $post["venue"];
         $image_filename = $post['image_filename'];
         $values = ["$first_name", "$last_name", "$email", "$mobile", "$booking_date", "$booking_time", "$venue", "$image_filename"];
-
-
-        $success = $this->contacts->addContact($values);
+        $success = $this->bookings->addBooking($values);
         if ($success) {
-            $message = "Contact has successfully added to Database. Loading View Contacts page in 5 seconds";
+            $message = "Booking has successfully added to Database. Loading View Bookings page in 5 seconds";
         } else {
-            $message = 'Contact failed to add to Database';
+            $message = 'Booking failed to add to Database';
         }
         $data = ['message' => $message];
         // return response header for JSON body content type
@@ -90,7 +96,7 @@ class RouteAction {
     }
     
     
-    function updateContact($request, $response, $args) {
+    function editBooking($request, $response, $args) {
         $post = $request->getParsedBody();
         $id = $args['id'];
         $first_name = $post["first_name"];
@@ -103,12 +109,11 @@ class RouteAction {
         $image_filename = $post['image_filename'];
         $values = ["$first_name", "$last_name", "$email", "$mobile", "$booking_date", "$booking_time", "$venue", "$image_filename"];
 
-
-        $success = $this->contacts->editContact($id,$values);
+        $success = $this->bookings->editBooking($id,$values);
         if ($success) {
-            $message = "Contact has successfully updated. Loading View Contacts page in 5 seconds";
+            $message = "Booking has successfully updated. Loading View Bookings page in 5 seconds";
         } else {
-            $message = 'Contact failed to updated';
+            $message = 'Booking failed to update';
         }
         $data = ['message' => $message];
         // return response header for JSON body content type

@@ -21,12 +21,13 @@ $container['RouteAction'] = function($c) {
 $app->get('/', \RouteAction::class.":index");
 // Create the REST based route for a resource URI
 $app->get('/data', \RouteAction::class.":getData");
-$app->get('/contacts', \RouteAction::class.":getContacts");
-$app->get("/contacts/keyword/{keyword}", \RouteAction::class.":searchContacts");
-$app->post('/contacts', \RouteAction::class.":addContact");
-$app->get('/contacts/{id}', \RouteAction::class.":getContact");
-$app->put('/contacts/{id}', \RouteAction::class.":updateContact");
-$app->delete('/contacts/{id}', \RouteAction::class.":deleteContact");
+$app->get('/bookings', \RouteAction::class.":getBookings");
+//$app->get('/bookings/keyword', \RouteAction::class.":getBookings");
+$app->get("/bookings/keyword/{keyword}", \RouteAction::class.":searchBookings");
+$app->post('/bookings', \RouteAction::class.":addBooking");
+$app->get('/bookings/{id}', \RouteAction::class.":getBooking");
+$app->put('/bookings/{id}', \RouteAction::class.":editBooking");
+$app->delete('/bookings/{id}', \RouteAction::class.":deleteBooking");
 // start the app
 $app->run();
 
