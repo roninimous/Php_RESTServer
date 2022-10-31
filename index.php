@@ -26,8 +26,12 @@ $app->get('/bookings', \RouteAction::class.":getBookings");
 $app->get("/bookings/keyword/{keyword}", \RouteAction::class.":searchBookings");
 $app->post('/bookings', \RouteAction::class.":addBooking");
 $app->get('/bookings/{id}', \RouteAction::class.":getBooking");
-$app->put('/bookings/{id}', \RouteAction::class.":editBooking");
+$app->put('/bookings/{id}', \RouteAction::class.":updateBooking");
 $app->delete('/bookings/{id}', \RouteAction::class.":deleteBooking");
+
+$app->post('/accounts', \RouteAction::class.":addUser");
+$app->post("/accounts/user", \RouteAction::class.":searchAccounts");
 // start the app
 $app->run();
 
+$app->get('/profileSetting/{id}', \RouteAction::class.":getProfile");

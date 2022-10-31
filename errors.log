@@ -1,0 +1,1048 @@
+[27-Oct-2019 14:51:13 Europe/Berlin] PHP Notice:  Undefined index: venue in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 94
+[27-Oct-2019 14:51:13 Europe/Berlin] PHP Notice:  Undefined index: image_filename in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 95
+[27-Oct-2019 14:52:43 Europe/Berlin] PHP Notice:  Undefined index: image_filename in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 95
+[27-Oct-2019 14:55:30 Europe/Berlin] PHP Notice:  Undefined index: image_filename in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 95
+[27-Oct-2019 15:47:36 Europe/Berlin] PHP Notice:  Undefined index: image_filename in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 95
+[27-Oct-2019 15:48:00 Europe/Berlin] PHP Notice:  Undefined index: image_filename in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 95
+[27-Oct-2019 15:49:01 Europe/Berlin] PHP Notice:  Undefined index: image_filename in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 95
+[27-Oct-2019 15:49:17 Europe/Berlin] PHP Notice:  Undefined index: image_filename in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 95
+[27-Oct-2019 15:49:57 Europe/Berlin] PHP Notice:  Undefined index: image_filename in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 95
+[27-Oct-2019 15:50:12 Europe/Berlin] PHP Notice:  Undefined index: image_filename in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 95
+[27-Oct-2019 15:53:58 Europe/Berlin] PHP Notice:  Undefined index: image_filename in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 95
+[27-Oct-2019 15:56:00 Europe/Berlin] PHP Notice:  Undefined index: image_filename in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 95
+[27-Oct-2019 15:56:26 Europe/Berlin] PHP Notice:  Undefined index: image_filename in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 95
+[27-Oct-2019 15:56:32 Europe/Berlin] PHP Notice:  Undefined index: image_filename in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 95
+[27-Oct-2019 16:10:28 Europe/Berlin] Slim Application Error:
+Type: RuntimeException
+Message: [{&quot;contacts&quot;:{&quot;pdo&quot;:{},&quot;dsn&quot;:&quot;mysql:host=localhost;dbname=vbookingsdb&quot;,&quot;username&quot;:&quot;root&quot;,&quot;password&quot;:&quot;&quot;}},&quot;deleteContact&quot;] is not resolvable
+File: C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\CallableResolver.php
+Line: 113
+Trace: #0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\CallableResolver.php(61): Slim\CallableResolver->assertCallable(Array)
+#1 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\CallableResolverAwareTrait.php(41): Slim\CallableResolver->resolve('RouteAction:del...')
+#2 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Route.php(276): Slim\Routable->resolveCallable('RouteAction:del...')
+#3 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#4 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServer4597377\index.php(31): Slim\App->run()
+#10 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[28-Oct-2019 15:56:34 Europe/Berlin] Slim Application Error:
+Type: Twig\Error\LoaderError
+Message: Unable to find template &quot;base.html.twig&quot; (looked into: C:\xampp\htdocs\RESTServer4597377\app/../templates) in &quot;index.html.twig&quot; at line 2.
+File: C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Loader\FilesystemLoader.php
+Line: 250
+Trace: #0 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Loader\FilesystemLoader.php(150): Twig\Loader\FilesystemLoader->findTemplate('base.html.twig')
+#1 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Environment.php(299): Twig\Loader\FilesystemLoader->getCacheKey('base.html.twig')
+#2 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Environment.php(381): Twig\Environment->getTemplateClass('base.html.twig')
+#3 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Template.php(335): Twig\Environment->loadTemplate('base.html.twig', NULL)
+#4 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Environment.php(418) : eval()'d code(43): Twig\Template->loadTemplate('base.html.twig', 'index.html.twig', 2)
+#5 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Template.php(407): __TwigTemplate_1398ef7c44e020d8ca75db1eecdd2d860bb197be4f09dd799a88289ec9159f1c->doDisplay(Array, Array)
+#6 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Template.php(380): Twig\Template->displayWithErrorHandling(Array, Array)
+#7 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Template.php(392): Twig\Template->display(Array)
+#8 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\TemplateWrapper.php(45): Twig\Template->render(Array, Array)
+#9 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Environment.php(318): Twig\TemplateWrapper->render(Array)
+#10 C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php(32): Twig\Environment->render('index.html.twig')
+#11 [internal function]: RouteAction->index(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#12 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#13 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#14 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#15 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#16 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#17 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#18 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#19 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#20 C:\xampp\htdocs\RESTServer4597377\index.php(33): Slim\App->run()
+#21 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[28-Oct-2019 16:52:36 Europe/Berlin] Slim Application Error:
+Type: Twig\Error\LoaderError
+Message: Unable to find template &quot;base.html.twig&quot; (looked into: C:\xampp\htdocs\RESTServer4597377\app/../templates) in &quot;index.html.twig&quot; at line 2.
+File: C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Loader\FilesystemLoader.php
+Line: 250
+Trace: #0 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Loader\FilesystemLoader.php(150): Twig\Loader\FilesystemLoader->findTemplate('base.html.twig')
+#1 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Environment.php(299): Twig\Loader\FilesystemLoader->getCacheKey('base.html.twig')
+#2 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Environment.php(381): Twig\Environment->getTemplateClass('base.html.twig')
+#3 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Template.php(335): Twig\Environment->loadTemplate('base.html.twig', NULL)
+#4 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Environment.php(418) : eval()'d code(43): Twig\Template->loadTemplate('base.html.twig', 'index.html.twig', 2)
+#5 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Template.php(407): __TwigTemplate_1398ef7c44e020d8ca75db1eecdd2d860bb197be4f09dd799a88289ec9159f1c->doDisplay(Array, Array)
+#6 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Template.php(380): Twig\Template->displayWithErrorHandling(Array, Array)
+#7 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Template.php(392): Twig\Template->display(Array)
+#8 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\TemplateWrapper.php(45): Twig\Template->render(Array, Array)
+#9 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Environment.php(318): Twig\TemplateWrapper->render(Array)
+#10 C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php(32): Twig\Environment->render('index.html.twig')
+#11 [internal function]: RouteAction->index(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#12 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#13 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#14 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#15 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#16 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#17 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#18 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#19 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#20 C:\xampp\htdocs\RESTServer4597377\index.php(33): Slim\App->run()
+#21 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[28-Oct-2019 16:55:11 Europe/Berlin] Slim Application Error:
+Type: TypeError
+Message: Argument 2 passed to Twig\Environment::render() must be of the type array, string given, called in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 32
+File: C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Environment.php
+Line: 316
+Trace: #0 C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php(32): Twig\Environment->render(Object(Slim\Http\Response), 'index.html.twig')
+#1 [internal function]: RouteAction->index(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServer4597377\index.php(33): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[28-Oct-2019 16:55:17 Europe/Berlin] Slim Application Error:
+Type: TypeError
+Message: Argument 2 passed to Twig\Environment::render() must be of the type array, string given, called in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 32
+File: C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Environment.php
+Line: 316
+Trace: #0 C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php(32): Twig\Environment->render(Object(Slim\Http\Response), 'index.html.twig')
+#1 [internal function]: RouteAction->index(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServer4597377\index.php(33): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[28-Oct-2019 16:55:19 Europe/Berlin] Slim Application Error:
+Type: TypeError
+Message: Argument 2 passed to Twig\Environment::render() must be of the type array, string given, called in C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php on line 32
+File: C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Environment.php
+Line: 316
+Trace: #0 C:\xampp\htdocs\RESTServer4597377\app\RouteAction.php(32): Twig\Environment->render(Object(Slim\Http\Response), 'index.html.twig')
+#1 [internal function]: RouteAction->index(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServer4597377\index.php(33): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[28-Oct-2019 17:00:20 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "base.html.twig" (looked into: C:\xampp\htdocs\RESTServer4597377./templates) in "index.html.twig" at line 2. in C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Loader\FilesystemLoader.php:250
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Loader\FilesystemLoader.php(150): Twig\Loader\FilesystemLoader->findTemplate('base.html.twig')
+#1 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Environment.php(299): Twig\Loader\FilesystemLoader->getCacheKey('base.html.twig')
+#2 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Environment.php(381): Twig\Environment->getTemplateClass('base.html.twig')
+#3 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Template.php(335): Twig\Environment->loadTemplate('base.html.twig', NULL)
+#4 C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Environment.php(418) : eval()'d code(43): Twig\Template->loadTemplate('base.html.twig', 'index.html.twig', 2)
+#5 C:\xampp\htdocs\RESTServer in C:\xampp\htdocs\RESTServer4597377\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 250
+[28-Oct-2019 17:01:06 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:01:06 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:01:25 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:01:25 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:01:26 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:01:26 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:01:27 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:01:27 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:01:27 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:01:27 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:01:28 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:01:28 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:01:28 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:01:28 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:01:38 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:01:38 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServer4597377\index.php(43): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServer4597377\vendor\slim\slim\Slim\App.php on line 621
+[28-Oct-2019 17:08:15 Europe/Berlin] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\RESTServer4597377\index.php on line 45
+[28-Oct-2019 17:08:15 Europe/Berlin] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\RESTServer4597377\index.php on line 45
+[28-Oct-2019 17:08:42 Europe/Berlin] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\RESTServer4597377\index.php on line 45
+[28-Oct-2019 17:08:42 Europe/Berlin] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\RESTServer4597377\index.php on line 45
+[28-Oct-2019 17:08:43 Europe/Berlin] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\RESTServer4597377\index.php on line 45
+[28-Oct-2019 17:08:43 Europe/Berlin] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\RESTServer4597377\index.php on line 45
+[28-Oct-2019 17:08:44 Europe/Berlin] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\RESTServer4597377\index.php on line 45
+[28-Oct-2019 17:08:44 Europe/Berlin] PHP Notice:  Undefined variable: title in C:\xampp\htdocs\RESTServer4597377\index.php on line 45
+[28-Dec-2019 15:13:05 Europe/Berlin] PHP Notice:  Undefined index: mobile in C:\xampp\htdocs\RESTServerUserMod\app\RouteAction.php on line 82
+[28-Dec-2019 15:13:05 Europe/Berlin] PHP Notice:  Undefined index: booking_date in C:\xampp\htdocs\RESTServerUserMod\app\RouteAction.php on line 83
+[28-Dec-2019 15:13:05 Europe/Berlin] PHP Notice:  Undefined index: booking_time in C:\xampp\htdocs\RESTServerUserMod\app\RouteAction.php on line 84
+[28-Dec-2019 15:13:05 Europe/Berlin] PHP Notice:  Undefined index: venue in C:\xampp\htdocs\RESTServerUserMod\app\RouteAction.php on line 85
+[28-Dec-2019 15:13:05 Europe/Berlin] PHP Notice:  Undefined index: image_filename in C:\xampp\htdocs\RESTServerUserMod\app\RouteAction.php on line 86
+[28-Dec-2019 15:17:01 Europe/Berlin] PHP Notice:  Undefined index: mobile in C:\xampp\htdocs\RESTServerUserMod\app\RouteAction.php on line 82
+[28-Dec-2019 15:17:01 Europe/Berlin] PHP Notice:  Undefined index: booking_date in C:\xampp\htdocs\RESTServerUserMod\app\RouteAction.php on line 83
+[28-Dec-2019 15:17:01 Europe/Berlin] PHP Notice:  Undefined index: booking_time in C:\xampp\htdocs\RESTServerUserMod\app\RouteAction.php on line 84
+[28-Dec-2019 15:17:01 Europe/Berlin] PHP Notice:  Undefined index: venue in C:\xampp\htdocs\RESTServerUserMod\app\RouteAction.php on line 85
+[28-Dec-2019 15:17:01 Europe/Berlin] PHP Notice:  Undefined index: image_filename in C:\xampp\htdocs\RESTServerUserMod\app\RouteAction.php on line 86
+[28-Dec-2019 16:22:07 Europe/Berlin] PHP Notice:  Object of class PDOStatement could not be converted to int in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 114
+[28-Dec-2019 16:23:46 Europe/Berlin] PHP Notice:  Object of class PDOStatement could not be converted to int in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 116
+[28-Dec-2019 16:30:57 Europe/Berlin] PHP Warning:  mysqli_stmt_num_rows() expects parameter 1 to be mysqli_stmt, array given in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 117
+[28-Dec-2019 16:38:08 Europe/Berlin] PHP Warning:  mysqli_stmt_num_rows() expects parameter 1 to be mysqli_stmt, array given in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 125
+[28-Dec-2019 16:38:38 Europe/Berlin] PHP Warning:  mysqli_stmt_num_rows() expects parameter 1 to be mysqli_stmt, array given in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 125
+[28-Dec-2019 16:38:41 Europe/Berlin] PHP Warning:  mysqli_stmt_num_rows() expects parameter 1 to be mysqli_stmt, array given in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 125
+[28-Dec-2019 16:40:31 Europe/Berlin] PHP Warning:  mysqli_stmt_num_rows() expects parameter 1 to be mysqli_stmt, array given in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 125
+[28-Dec-2019 16:44:05 Europe/Berlin] PHP Warning:  mysqli_stmt_num_rows() expects parameter 1 to be mysqli_stmt, int given in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 125
+[28-Dec-2019 16:48:53 Europe/Berlin] PHP Notice:  Undefined variable: statement in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 123
+[28-Dec-2019 16:48:55 Europe/Berlin] PHP Notice:  Undefined variable: statement in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 123
+[28-Dec-2019 16:48:59 Europe/Berlin] PHP Notice:  Undefined variable: statement in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 123
+[28-Dec-2019 16:50:45 Europe/Berlin] PHP Notice:  Undefined variable: statement in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 123
+[28-Dec-2019 16:50:47 Europe/Berlin] PHP Notice:  Undefined variable: statement in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 123
+[28-Dec-2019 16:51:01 Europe/Berlin] PHP Notice:  Undefined variable: statement in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 123
+[28-Dec-2019 16:51:29 Europe/Berlin] PHP Notice:  Undefined variable: statement in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 123
+[28-Dec-2019 16:51:30 Europe/Berlin] PHP Notice:  Undefined variable: statement in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 123
+[28-Dec-2019 16:51:35 Europe/Berlin] PHP Notice:  Undefined variable: statement in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 123
+[28-Dec-2019 16:53:05 Europe/Berlin] PHP Notice:  Undefined variable: statement in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 123
+[25-Apr-2020 00:21:00 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'vbookingsdb' in C:\xampp\htdocs\RESTServerUserMod\app\VbookingsDB.php on line 10
+[25-Apr-2020 00:21:01 Europe/Berlin] Slim Application Error:
+Type: PDOException
+Code: 1049
+Message: SQLSTATE[HY000] [1049] Unknown database 'vbookingsdb'
+File: C:\xampp\htdocs\RESTServerUserMod\app\ContactsDB.php
+Line: 23
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod\app\ContactsDB.php(23): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\RESTServerUserMod\app\RouteAction.php(16): ContactsDB->__construct()
+#2 C:\xampp\htdocs\RESTServerUserMod\index.php(17): RouteAction->__construct()
+#3 C:\xampp\htdocs\RESTServerUserMod\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#4 C:\xampp\htdocs\RESTServerUserMod\vendor\slim\slim\Slim\Container.php(108): Pimple\Container->offsetGet('RouteAction')
+#5 C:\xampp\htdocs\RESTServerUserMod\vendor\slim\slim\Slim\CallableResolver.php(95): Slim\Container->get('RouteAction')
+#6 C:\xampp\htdocs\RESTServerUserMod\vendor\slim\slim\Slim\CallableResolver.php(58): Slim\CallableResolver->resolveCallable('RouteAction', 'searchAccounts')
+#7 C:\xampp\htdocs\RESTServerUserMod\vendor\slim\slim\Slim\CallableResolverAwareTrait.php(41): Slim\CallableResolver->resolve('RouteAction:sea...')
+#8 C:\xampp\htdocs\RESTServerUserMod\vendor\slim\slim\Slim\Route.php(276): Slim\Routable->resolveCallable('RouteAction:sea...')
+#9 C:\xampp\htdocs\RESTServerUserMod\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 C:\xampp\htdocs\RESTServerUserMod\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 C:\xampp\htdocs\RESTServerUserMod\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 C:\xampp\htdocs\RESTServerUserMod\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#14 C:\xampp\htdocs\RESTServerUserMod\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#15 C:\xampp\htdocs\RESTServerUserMod\index.php(35): Slim\App->run()
+#16 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[25-Apr-2020 00:21:01 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServerUserMod\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServerUserMod\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServerUserMod\index.php(35): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServerUserMod\vendor\slim\slim\Slim\App.php on line 621
+[31-Oct-2022 08:52:55 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php on line 10
+[31-Oct-2022 08:52:59 Europe/Berlin] Slim Application Error:
+Type: PDOException
+Code: 2002
+Message: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+File: C:\xampp\htdocs\RESTServerUserMod1\app\ContactsDB.php
+Line: 23
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\ContactsDB.php(23): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(16): ContactsDB->__construct()
+#2 C:\xampp\htdocs\RESTServerUserMod1\index.php(17): RouteAction->__construct()
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Container.php(108): Pimple\Container->offsetGet('RouteAction')
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolver.php(95): Slim\Container->get('RouteAction')
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolver.php(58): Slim\CallableResolver->resolveCallable('RouteAction', 'getBookings')
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolverAwareTrait.php(41): Slim\CallableResolver->resolve('RouteAction:get...')
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(276): Slim\Routable->resolveCallable('RouteAction:get...')
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#14 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#15 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#16 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 08:52:59 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php on line 621
+[31-Oct-2022 08:53:04 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php on line 10
+[31-Oct-2022 08:53:08 Europe/Berlin] Slim Application Error:
+Type: PDOException
+Code: 2002
+Message: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+File: C:\xampp\htdocs\RESTServerUserMod1\app\ContactsDB.php
+Line: 23
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\ContactsDB.php(23): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(16): ContactsDB->__construct()
+#2 C:\xampp\htdocs\RESTServerUserMod1\index.php(17): RouteAction->__construct()
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Container.php(108): Pimple\Container->offsetGet('RouteAction')
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolver.php(95): Slim\Container->get('RouteAction')
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolver.php(58): Slim\CallableResolver->resolveCallable('RouteAction', 'getBookings')
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolverAwareTrait.php(41): Slim\CallableResolver->resolve('RouteAction:get...')
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(276): Slim\Routable->resolveCallable('RouteAction:get...')
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#14 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#15 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#16 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 08:53:08 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php on line 621
+[31-Oct-2022 08:53:12 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php on line 10
+[31-Oct-2022 08:53:16 Europe/Berlin] Slim Application Error:
+Type: PDOException
+Code: 2002
+Message: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+File: C:\xampp\htdocs\RESTServerUserMod1\app\ContactsDB.php
+Line: 23
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\ContactsDB.php(23): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(16): ContactsDB->__construct()
+#2 C:\xampp\htdocs\RESTServerUserMod1\index.php(17): RouteAction->__construct()
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Container.php(108): Pimple\Container->offsetGet('RouteAction')
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolver.php(95): Slim\Container->get('RouteAction')
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolver.php(58): Slim\CallableResolver->resolveCallable('RouteAction', 'getBookings')
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolverAwareTrait.php(41): Slim\CallableResolver->resolve('RouteAction:get...')
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(276): Slim\Routable->resolveCallable('RouteAction:get...')
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#14 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#15 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#16 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 08:53:16 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php on line 621
+[31-Oct-2022 08:53:20 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php on line 10
+[31-Oct-2022 08:53:24 Europe/Berlin] Slim Application Error:
+Type: PDOException
+Code: 2002
+Message: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+File: C:\xampp\htdocs\RESTServerUserMod1\app\ContactsDB.php
+Line: 23
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\ContactsDB.php(23): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(16): ContactsDB->__construct()
+#2 C:\xampp\htdocs\RESTServerUserMod1\index.php(17): RouteAction->__construct()
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Container.php(108): Pimple\Container->offsetGet('RouteAction')
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolver.php(95): Slim\Container->get('RouteAction')
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolver.php(58): Slim\CallableResolver->resolveCallable('RouteAction', 'getBookings')
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolverAwareTrait.php(41): Slim\CallableResolver->resolve('RouteAction:get...')
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(276): Slim\Routable->resolveCallable('RouteAction:get...')
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#14 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#15 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#16 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 08:53:24 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php on line 621
+[31-Oct-2022 08:53:28 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php on line 10
+[31-Oct-2022 08:53:32 Europe/Berlin] Slim Application Error:
+Type: PDOException
+Code: 2002
+Message: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+File: C:\xampp\htdocs\RESTServerUserMod1\app\ContactsDB.php
+Line: 23
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\ContactsDB.php(23): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(16): ContactsDB->__construct()
+#2 C:\xampp\htdocs\RESTServerUserMod1\index.php(17): RouteAction->__construct()
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Container.php(108): Pimple\Container->offsetGet('RouteAction')
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolver.php(95): Slim\Container->get('RouteAction')
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolver.php(58): Slim\CallableResolver->resolveCallable('RouteAction', 'getBookings')
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolverAwareTrait.php(41): Slim\CallableResolver->resolve('RouteAction:get...')
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(276): Slim\Routable->resolveCallable('RouteAction:get...')
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#14 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#15 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#16 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 08:53:32 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php on line 621
+[31-Oct-2022 08:53:36 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php on line 10
+[31-Oct-2022 08:53:41 Europe/Berlin] Slim Application Error:
+Type: PDOException
+Code: 2002
+Message: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+File: C:\xampp\htdocs\RESTServerUserMod1\app\ContactsDB.php
+Line: 23
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\ContactsDB.php(23): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(16): ContactsDB->__construct()
+#2 C:\xampp\htdocs\RESTServerUserMod1\index.php(17): RouteAction->__construct()
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Container.php(108): Pimple\Container->offsetGet('RouteAction')
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolver.php(95): Slim\Container->get('RouteAction')
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolver.php(58): Slim\CallableResolver->resolveCallable('RouteAction', 'getBookings')
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolverAwareTrait.php(41): Slim\CallableResolver->resolve('RouteAction:get...')
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(276): Slim\Routable->resolveCallable('RouteAction:get...')
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#14 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#15 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#16 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 08:53:41 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php on line 621
+[31-Oct-2022 08:54:31 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php on line 10
+[31-Oct-2022 08:54:35 Europe/Berlin] Slim Application Error:
+Type: PDOException
+Code: 2002
+Message: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+File: C:\xampp\htdocs\RESTServerUserMod1\app\ContactsDB.php
+Line: 23
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\ContactsDB.php(23): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(16): ContactsDB->__construct()
+#2 C:\xampp\htdocs\RESTServerUserMod1\index.php(17): RouteAction->__construct()
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\pimple\pimple\src\Pimple\Container.php(118): {closure}(Object(Slim\Container))
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Container.php(108): Pimple\Container->offsetGet('RouteAction')
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolver.php(95): Slim\Container->get('RouteAction')
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolver.php(58): Slim\CallableResolver->resolveCallable('RouteAction', 'getBookings')
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\CallableResolverAwareTrait.php(41): Slim\CallableResolver->resolve('RouteAction:get...')
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(276): Slim\Routable->resolveCallable('RouteAction:get...')
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#11 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#12 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#13 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#14 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#15 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#16 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 08:54:35 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php on line 621
+[31-Oct-2022 08:54:39 Europe/Berlin] PHP Warning:  mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php on line 10
+[31-Oct-2022 08:54:40 Europe/Berlin] PHP Fatal error:  Uncaught RuntimeException: Unexpected data in output buffer. Maybe you have characters before an opening <?php tag? in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php:621
+Stack trace:
+#0 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(317): Slim\App->finalize(Object(Slim\Http\Response))
+#1 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#2 {main}
+  thrown in C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php on line 621
+[31-Oct-2022 08:54:58 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 53
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(48): VbookingsDB->getBooking('1 type=')
+#1 [internal function]: RouteAction->getBooking(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 08:55:06 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 53
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(48): VbookingsDB->getBooking('1 type=')
+#1 [internal function]: RouteAction->getBooking(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 08:55:39 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 53
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(48): VbookingsDB->getBooking('1 type=')
+#1 [internal function]: RouteAction->getBooking(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 08:57:58 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 08:58:15 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 08:59:02 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('_\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 08:59:55 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:01:32 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:04:49 Europe/Berlin] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) in C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php on line 95
+[31-Oct-2022 09:04:58 Europe/Berlin] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) in C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php on line 95
+[31-Oct-2022 09:05:01 Europe/Berlin] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) in C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php on line 95
+[31-Oct-2022 09:05:03 Europe/Berlin] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) in C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php on line 95
+[31-Oct-2022 09:05:05 Europe/Berlin] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) in C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php on line 95
+[31-Oct-2022 09:05:24 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('_\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:05:28 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:06:10 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 110
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:06:13 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 110
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:10:02 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC\xE1\x9E\xA0\xE1\x9F\x92...')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:12:47 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC\xE1\x9E\xA0\xE1\x9F\x92...')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:26:10 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:27:47 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:27:52 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:33:25 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC\xE1\x9E\xA0\xE1\x9F\x92...')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:33:27 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC\xE1\x9E\xA0\xE1\x9F\x92...')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:34:15 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC\xE1\x9E\xA0\xE1\x9F\x92...')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:34:29 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:34:46 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:36:37 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('_\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC\xE1\x9E\xA0\xE1\x9F...')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:38:06 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('_\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC\xE1\x9E\xA0\xE1\x9F...')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 09:38:44 Europe/Berlin] Slim Application Error:
+Type: Error
+Message: Call to a member function setFetchMode() on bool
+File: C:\xampp\htdocs\RESTServerUserMod1\app\VbookingsDB.php
+Line: 109
+Trace: #0 C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php(70): VbookingsDB->searchBookings('_\xE1\x9E\x9A\xE1\x9F\x89\xE1\x9E\xBC\xE1\x9E\xA0\xE1\x9F...')
+#1 [internal function]: RouteAction->searchBookings(Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#2 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#3 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Http\Request), Object(Slim\Http\Response), Array)
+#4 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#5 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#6 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(503): Slim\Route->run(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#7 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->__invoke(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#8 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#9 C:\xampp\htdocs\RESTServerUserMod1\vendor\slim\slim\Slim\App.php(297): Slim\App->process(Object(Slim\Http\Request), Object(Slim\Http\Response))
+#10 C:\xampp\htdocs\RESTServerUserMod1\index.php(35): Slim\App->run()
+#11 {main}
+View in rendered output by enabling the "displayErrorDetails" setting.
+
+[31-Oct-2022 10:13:32 Europe/Berlin] PHP Notice:  Undefined variable: statement in C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php on line 89
+[31-Oct-2022 10:13:36 Europe/Berlin] PHP Notice:  Undefined variable: statement in C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php on line 89
+[31-Oct-2022 10:14:37 Europe/Berlin] PHP Notice:  Undefined variable: statement in C:\xampp\htdocs\RESTServerUserMod1\app\RouteAction.php on line 89

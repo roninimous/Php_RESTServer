@@ -6,6 +6,7 @@
  */
 include_once 'ContactsDB.php';
 include_once 'VbookingsDB.php';
+
 class RouteAction {
 
     var $contacts;
@@ -14,6 +15,7 @@ class RouteAction {
     function __construct() {
         $this->contacts = new ContactsDB();
         $this->bookings = new VbookingsDB();
+        $this->accounts = new VbookingsDB();
     }
 
     function index($request, $response, $args) {
@@ -40,7 +42,7 @@ class RouteAction {
         return $response->withHeader('Content-Type', 'application/json')
                         ->write(json_encode($records));
     }
-    
+
     function getBooking($request, $response, $args) {
         $id = $args['id'];
         $record = $this->bookings->getBooking($id);
@@ -48,7 +50,15 @@ class RouteAction {
         return $response->withHeader('Content-Type', 'application/json')
                         ->write(json_encode($record));
     }
-    
+
+    function getProfile($request, $response, $args) {
+        $id = $args['id'];
+        $record = $this->accounts->getProfile($id);
+        // return response header for JSON body content type
+        return $response->withHeader('Content-Type', 'application/json')
+                        ->write(json_encode($record));
+    }
+
     function deleteBooking($request, $response, $args) {
         $id = $args['id'];
         $success = $this->bookings->deleteBooking($id);
@@ -70,10 +80,45 @@ class RouteAction {
         return $response->withHeader('Content-Type', 'application/json')
                         ->write(json_encode($records));
     }
+    // login
+    function searchAccounts($request, $response, $args) {
+//        $keyword = $args['keyword'];
+        $post = $request->getParsedBody();
+
+        $email = $post["email"];
+        $password = $post["password"];
+        
+        $success = $this->accounts->searchAccounts($email,$password);
+        // return response header for JSON body content type
+//        return $response->withHeader('Content-Type', 'application/json')
+//                        ->write(json_encode($records));
+        $loginUser = $this->accounts->loginUser($email,$password);
+        $userId = $this->accounts->loginId($email,$password);
+        // if ($statement==0){
+        //     $message = 'Incorrect email or password';
+        // }
+        // else{
+        //     $message = "You are now logged in!";
+        // }
+
+
+
+        if ($success==3) {
+            $message = "You are now logged in!";
+            $loginStatus = True;
+        } else {
+            $message = 'Incorrect email or password';
+            $loginStatus = False;
+        }
+        $data = ['message' => $message, 'loginUser' =>$loginUser, 'loginStatus'=>$loginStatus, 'userId'=>$userId];
+        // return response header for JSON body content type
+        return $response->withHeader('Content-Type', 'application/json')
+                        ->write(json_encode($data));
+    }
 
     function addBooking($request, $response, $args) {
         $post = $request->getParsedBody();
-        
+
         $first_name = $post["first_name"];
         $last_name = $post["last_name"];
         $email = $post["email"];
@@ -94,9 +139,29 @@ class RouteAction {
         return $response->withHeader('Content-Type', 'application/json')
                         ->write(json_encode($data));
     }
-    
-    
-    function editBooking($request, $response, $args) {
+
+    function addUser($request, $response, $args) {
+        $post = $request->getParsedBody();
+
+        $first_name = $post["first_name"];
+        $last_name = $post["last_name"];
+        $email = $post["email"];
+        $password = $post["password"];
+        $phone = $post["phone"];
+        $values = [ "$email", "$password", "$last_name", "$first_name", "$phone"];
+        $success = $this->bookings->addUsers($values);
+        if ($success) {
+            $message = "Account has been created";
+        } else {
+            $message = "Failed to create account";
+        }
+        $data = ['message' => $message];
+        // return response header for JSON body content type
+        return $response->withHeader('Content-Type', 'application/json')
+                        ->write(json_encode($data));
+    }
+
+    function updateBooking($request, $response, $args) {
         $post = $request->getParsedBody();
         $id = $args['id'];
         $first_name = $post["first_name"];
@@ -109,7 +174,7 @@ class RouteAction {
         $image_filename = $post['image_filename'];
         $values = ["$first_name", "$last_name", "$email", "$mobile", "$booking_date", "$booking_time", "$venue", "$image_filename"];
 
-        $success = $this->bookings->editBooking($id,$values);
+        $success = $this->bookings->updateBooking($id, $values);
         if ($success) {
             $message = "Booking has successfully updated. Loading View Bookings page in 5 seconds";
         } else {
